@@ -1,5 +1,3 @@
-require 'pry'
-
 class Application
 
   @@items = ["Apples","Carrots","Pears"]
@@ -48,7 +46,6 @@ class Application
   end
 
   def handle_search(search_term)
-    binding.pry
     if @@cart.include?(search_term)
       return "#{search_term} is one of our items"
     else
