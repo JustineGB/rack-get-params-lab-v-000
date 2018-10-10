@@ -44,5 +44,13 @@ class Application
     end
     resp.finish
   end
-
+  
+  def handle_search(search_term)
+    if @@cart.include?(search_term)
+      return "#{search_term} is one of our items"
+    else
+      return "Couldn't find #{search_term}"
+    end
+  end
+  
 end
