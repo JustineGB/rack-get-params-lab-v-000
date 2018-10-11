@@ -22,7 +22,7 @@ class Application
             resp.write "#{item}\n"
             end
           end
-    elsif req.path.match(/add/)
+    else req.path.match(/add/)
           item = req.params["item"]
             if @@items.include?(item)
               @@cart << item
@@ -30,10 +30,8 @@ class Application
             else
               resp.write "We don't have that item"
             end
-      else
-        resp.write "Path not Found"
+
     end
-    return "Couldn't find that, sorry!"
     resp.finish
   end
 
