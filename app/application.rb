@@ -46,14 +46,4 @@ class Application
     end
   end
 
-  def add_item(item)
-
-
-
-
-
-    resp.finish
-  end
-
-
 end
