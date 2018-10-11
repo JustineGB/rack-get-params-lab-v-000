@@ -30,7 +30,7 @@ class Application
       item = search_term
       if @@items.include?(item)
         @@cart << item
-        resp.write "Added: #{item}."  
+        resp.write "Added: #{item}."
       else
         resp.write "Your cart is empty"
     end
