@@ -33,9 +33,7 @@ class Application
       else
         resp.write "Path not Found"
     end
-        return "Couldn't find that, sorry!"
-
-
+    return "Couldn't find that, sorry!"
     resp.finish
   end
 
